@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE51E05B2CC2741E005EFCD3 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE51E05A2CC2741E005EFCD3 /* PersonView.swift */; };
 		EEAA97872CC120CF003BA1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA97862CC120CF003BA1BC /* AppDelegate.swift */; };
 		EEAA97892CC120CF003BA1BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA97882CC120CF003BA1BC /* SceneDelegate.swift */; };
-		EEAA978B2CC120CF003BA1BC /* peopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA978A2CC120CF003BA1BC /* peopleViewController.swift */; };
+		EEAA978B2CC120CF003BA1BC /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA978A2CC120CF003BA1BC /* PeopleViewController.swift */; };
 		EEAA97902CC120D0003BA1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAA978F2CC120D0003BA1BC /* Assets.xcassets */; };
 		EEAA97932CC120D0003BA1BC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EEAA97922CC120D0003BA1BC /* Base */; };
+		EEF5DCE52CC27E6200D489E9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5DCE42CC27E6200D489E9 /* Model.swift */; };
+		EEF5DCE72CC27ED200D489E9 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5DCE62CC27ED200D489E9 /* PeopleViewModel.swift */; };
+		EEF5DCE92CC2908D00D489E9 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5DCE82CC2908D00D489E9 /* PersonCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE51E05A2CC2741E005EFCD3 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		EEAA97832CC120CF003BA1BC /* UIKitPlayaround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPlayaround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAA97862CC120CF003BA1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEAA97882CC120CF003BA1BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEAA978A2CC120CF003BA1BC /* peopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peopleViewController.swift; sourceTree = "<group>"; };
+		EEAA978A2CC120CF003BA1BC /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		EEAA978F2CC120D0003BA1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEAA97922CC120D0003BA1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAA97942CC120D0003BA1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF5DCE42CC27E6200D489E9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EEF5DCE62CC27ED200D489E9 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		EEF5DCE82CC2908D00D489E9 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,10 @@
 		EEAA977A2CC120CF003BA1BC = {
 			isa = PBXGroup;
 			children = (
+				EEF5DCE82CC2908D00D489E9 /* PersonCollectionViewCell.swift */,
+				EEF5DCE42CC27E6200D489E9 /* Model.swift */,
+				EEF5DCE62CC27ED200D489E9 /* PeopleViewModel.swift */,
+				EE51E05A2CC2741E005EFCD3 /* PersonView.swift */,
 				EEAA97852CC120CF003BA1BC /* UIKitPlayaround */,
 				EEAA97842CC120CF003BA1BC /* Products */,
 			);
@@ -56,7 +68,7 @@
 			children = (
 				EEAA97862CC120CF003BA1BC /* AppDelegate.swift */,
 				EEAA97882CC120CF003BA1BC /* SceneDelegate.swift */,
-				EEAA978A2CC120CF003BA1BC /* peopleViewController.swift */,
+				EEAA978A2CC120CF003BA1BC /* PeopleViewController.swift */,
 				EEAA978F2CC120D0003BA1BC /* Assets.xcassets */,
 				EEAA97912CC120D0003BA1BC /* LaunchScreen.storyboard */,
 				EEAA97942CC120D0003BA1BC /* Info.plist */,
@@ -134,8 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEAA978B2CC120CF003BA1BC /* peopleViewController.swift in Sources */,
+				EEF5DCE52CC27E6200D489E9 /* Model.swift in Sources */,
+				EEF5DCE72CC27ED200D489E9 /* PeopleViewModel.swift in Sources */,
+				EEAA978B2CC120CF003BA1BC /* PeopleViewController.swift in Sources */,
+				EE51E05B2CC2741E005EFCD3 /* PersonView.swift in Sources */,
 				EEAA97872CC120CF003BA1BC /* AppDelegate.swift in Sources */,
+				EEF5DCE92CC2908D00D489E9 /* PersonCollectionViewCell.swift in Sources */,
 				EEAA97892CC120CF003BA1BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
